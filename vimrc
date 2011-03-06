@@ -1,32 +1,31 @@
+" Require by pathogen
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 
-
+set history=50        " keep 50 lines of command line history
 set ruler        " show the cursor position all the time
 set showcmd        " display incomplete commands
 set incsearch        " do incremental searching
 
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
 
 set nocompatible " breaks compatibility with original vi
 set backspace=indent,eol,start " allow backspace in insert mode
-set autoindent    " text indenting
-set smartindent   " as above
+"set autoindent    " text indenting
+"set smartindent   " as above
 set tabstop=4     " number of spaces in a tab
 set softtabstop=4 " as above
 set shiftwidth=4  " as above
 
 set history=100   " lines of command history
 set showcmd       " show incomplete commands
-set hlsearch      " highlight searched-for phrases
+"set hlsearch      " highlight searched-for phrases
 set incsearch     " highlight search as you type
 set smarttab
 "set list " affiche les caracteres louches
 set tabpagemax=15
+
 "Color
 colorscheme delek " set up a color scheme in the gvim interface
 syntax on " active the syntaxic coloration
@@ -36,7 +35,7 @@ let mywinfont="Monospace:h10:cANSI"
 
 "Retour a la meme position
 if has("autocmd")
-  filetype plugin indent on
+  "filetype plugin indent on
   "autocmd FileType text setlocal textwidth=78
 
 " always jump to last edit position when opening a file
@@ -53,11 +52,9 @@ highlight CursorLine guibg=#616668
 syntax on
 
 
-
-
 "Pimp l'apparence
 if has("gui_running")                 " console Vim cannot set the font
-    colorscheme koehler " set up a color scheme in the gvim interface
+    colorscheme slate " set up a color scheme in the gvim interface
     set mousemodel=popup " create popop when right click in gui
 
     if has("gui_gtk2")            " GTK+2, not GTK+1
@@ -76,3 +73,10 @@ if has("gui_running")                 " console Vim cannot set the font
 else
     "set listchars=eol:Â¶,tab:â+'âEUR?,trail:Â»,extends:â+",precedes:â+
 endif
+
+" Fantom
+au BufNewFile,BufRead *.fan,*.fwt setf fan
+
+" web
+au BufNewFile,BufRead *.jade,*.html,*.css,*.js,*.styl set sw=2
+
