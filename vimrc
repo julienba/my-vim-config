@@ -17,6 +17,7 @@ set backspace=indent,eol,start " allow backspace in insert mode
 set tabstop=4     " number of spaces in a tab
 set softtabstop=4 " as above
 set shiftwidth=4  " as above
+set expandtab
 
 set history=100   " lines of command history
 set showcmd       " show incomplete commands
