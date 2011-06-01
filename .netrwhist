@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/julien/REPOSITORY/playframework/play-1.1.1/samples-and-tests/yabe/tmp/classes/aspecttest'
-let g:netrw_dirhist_2='/home/julien/REPOSITORY/NODEJS/wheat/lib/wheat'
