@@ -81,3 +81,5 @@ au BufNewFile,BufRead *.fan,*.fwt setf fan
 " web
 au BufNewFile,BufRead *.jade,*.html,*.css,*.js,*.styl set sw=2
 
+" shortcut for NERDTree
+nmap <silent> <c-n> :NERDTreeToggle<CR>
