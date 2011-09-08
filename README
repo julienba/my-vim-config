@@ -11,3 +11,8 @@ Switch to the `~/.vim` directory, and fetch submodules:
     cd ~/.vim
     git submodule init
     git submodule update
+
+NOTE:
+    for tags it's necessary to isntall ctags:
+        - yaourt -S ctags
+        - debian ?

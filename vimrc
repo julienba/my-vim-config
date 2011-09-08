@@ -83,3 +83,6 @@ au BufNewFile,BufRead *.jade,*.html,*.css,*.js,*.styl set sw=2
 
 " shortcut for NERDTree
 nmap <silent> <c-n> :NERDTreeToggle<CR>
+
+" shortcut tagbar
+nmap <silent> <c-b> :TagbarToggle <CR>
