@@ -1,0 +1,18 @@
+# protect vim environnement
+term xterm
+
+# make the shell in every window as your login shell
+#shell -$SHELL
+
+
+### Tips from https://wiki.archlinux.org/index.php/Screen_Tips
+# add informative status
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d%{W} %c %{g}]'
+
+# skip welome page
+startup_message off
+
+
+bell off
