@@ -27,6 +27,8 @@ set smarttab
 "set list " affiche les caracteres louches
 set tabpagemax=15
 
+set ft=bash
+
 "Color
 colorscheme delek " set up a color scheme in the gvim interface
 syntax on " active the syntaxic coloration
