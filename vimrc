@@ -54,7 +54,7 @@ highlight CursorLine guibg=#616668
 
 syntax on
 
-set mouse=a
+"set mouse=a
 
 "Pimp l'apparence
 if has("gui_running")                 " console Vim cannot set the font
@@ -135,5 +135,5 @@ let g:tagbar_type_scala = {
 
 "deffile' : expand('<sfile>:p:h:h') . '/ctags/mylang.cnf'
 
-
+set clipboard=unnamedplus
 
