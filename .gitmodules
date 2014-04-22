@@ -23,3 +23,18 @@
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
 
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = git://github.com/tpope/vim-fireplace.git
+[submodule "bundle/vim-classpath"]
+	path = bundle/vim-classpath
+	url = git://github.com/tpope/vim-classpath.git
+[submodule "bundle/vim-clojure-static"]
+	path = bundle/vim-clojure-static
+	url = git://github.com/guns/vim-clojure-static.git
+[submodule "bundle/tmux-complete.vim"]
+	path = bundle/tmux-complete.vim
+	url = https://github.com/wellle/tmux-complete.vim.git
+[submodule "bundle/avro-vim"]
+	path = bundle/avro-vim
+	url = https://github.com/dln/avro-vim.git

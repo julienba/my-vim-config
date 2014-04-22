@@ -54,6 +54,7 @@ highlight CursorLine guibg=#616668
 
 syntax on
 
+set mouse=a
 
 "Pimp l'apparence
 if has("gui_running")                 " console Vim cannot set the font
@@ -82,6 +83,13 @@ au BufNewFile,BufRead *.fan,*.fwt setf fan
 
 " web
 au BufNewFile,BufRead *.jade,*.html,*.css,*.js,*.styl set sw=2
+
+" nextgen language
+au BufNewFile,BufRead *.scala,*.sbt,*.clj set sw=2
+au BufNewFile,BufRead *.sbt setf scala
+
+" avro
+au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
 
 " shortcut for NERDTree
 nmap <silent> <c-n> :NERDTreeToggle<CR>
@@ -126,4 +134,6 @@ let g:tagbar_type_scala = {
 
 
 "deffile' : expand('<sfile>:p:h:h') . '/ctags/mylang.cnf'
+
+
 
