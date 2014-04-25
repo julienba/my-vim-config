@@ -137,3 +137,8 @@ let g:tagbar_type_scala = {
 
 set clipboard=unnamedplus
 
+
+"thanks to http://ku1ik.com/2011/09/08/formatting-xml-in-vim-with-indent-command.html
+" gg=G
+set equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
