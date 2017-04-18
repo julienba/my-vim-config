@@ -1,0 +1,38 @@
+"*":
+  core:
+    allowPendingPaneItems: false
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 16
+  "exception-reporting":
+    userId: "ee7915c3-4fbd-4171-027d-cfa15446ca80"
+  "lisp-paredit":
+    indentationForms: [
+      "try"
+      "catch"
+      "finally"
+      "let"
+      "are"
+      "/^def.*/"
+      "fn"
+      "cond"
+      "if"
+      "if-let"
+      "for"
+      "/when.*/"
+      "testing"
+      "doseq"
+      "dotimes"
+      "loop"
+      "ns"
+    ]
+    strict: false
+  "proto-repl":
+    autoPrettyPrint: true
+    refreshOnReplStart: false
+".clojure.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    nonWordCharacters: "()\"':,;~@#$%^&{}[]`"
+    scrollPastEnd: true
