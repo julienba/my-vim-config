@@ -87,6 +87,7 @@ au BufNewFile,BufRead *.jade,*.html,*.css,*.js,*.styl set sw=2
 " nextgen language
 au BufNewFile,BufRead *.scala,*.sbt,*.clj set sw=2
 au BufNewFile,BufRead *.sbt setf scala
+au BufNewFile,BufRead *.boot setf clojure
 
 " avro
 au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
