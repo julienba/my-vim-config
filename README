@@ -13,6 +13,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule update
 
 NOTE:
-    for tags it's necessary to isntall ctags:
-        - yaourt -S ctags
-        - debian ?
+    for tags it's necessary to install ctags:
+        - arch linux: yaourt -S ctags
+        - debian: apt-get install exuberant-ctags
+		- redhat: yum install ctags
