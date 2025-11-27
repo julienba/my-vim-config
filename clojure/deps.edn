@@ -1,6 +1,7 @@
 {:aliases {:dev-tool/dev
            {:extra-deps {dev-tool/dev-tool {:local/root "/home/jba/PROJECTS/dev-tool"}
-                         djblue/portal {:mvn/version "0.62.0"}}}
+                         djblue/portal {:mvn/version "0.62.0"}
+                         io.github.clojure/java.doc {:git/tag "v0.1.2" :git/sha "fc518b1"}}}
 
            :dev-tool/outdated
            {:extra-deps {com.github.liquidz/antq {:mvn/version "2.11.1276"}}
